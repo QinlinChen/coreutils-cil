@@ -104,13 +104,13 @@ case $1 in
     ;;
   patch-makefile)
     if [ $# -lt 2 ]; then
-       help && exit 1
+       echo "Error: need argument <makefile>" && exit 1
     fi
     do_patch_makefile $2
     ;;
   unpatch-makefile)
     if [ $# -lt 2 ]; then
-       help && exit 1
+       echo "Error: need argument <makefile>" && exit 1
     fi
     do_unpatch_makefile $2
     ;;
