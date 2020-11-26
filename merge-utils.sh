@@ -7,11 +7,12 @@ function help() {
 
 COMMANDS
     configure
+    patch-all
     patch-makefile <makefile>
     unpatch-makefile <makefile>
     patch-inline
     patch-static-assert
-    patch-all
+    save-all
     save-comb
     save-bin
     replace-bin"
@@ -128,6 +129,9 @@ case $1 in
     ;;
   save-bin)
     do_save_bin
+    ;;
+  save-all)
+    do_save_comb && do_save_bin
     ;;
   replace-bin)
     do_replace_bin
