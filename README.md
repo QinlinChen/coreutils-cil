@@ -5,9 +5,12 @@ We provide a bash script to help you merge and simplify coreutils source code us
 ## Prerequest
 
 - cil-1.7.3 (installed by `opam`)
-- gcc-4.8 (installed by `apt` on Ubuntu 20.04)
+- gcc-4.8 (installed by `apt` on Ubuntu 18.04)
 - musl-1.2.1 (compiled from the source code)
 - coreutils source code (v8.32 is what we use).
+
+There can be many unexpected errors if your environment has any deviations from mine,
+so we release a [merged coreutils source code](https://github.com/QinlinChen/coreutils-merge/releases/tag/v0.1) for your reference.
 
 ## Usage
 
